@@ -7,14 +7,14 @@
  * macros. It is important to define these macros here, in the
  * header, because it is used by tests.
  */
-#define NEED_BROADCAST 0
-#define NEED_BATCH 0
+#define NEED_BROADCAST 1
+#define NEED_BATCH 1
 
 enum coro_bus_error_code {
-	CORO_BUS_ERR_NONE = 0,
-	CORO_BUS_ERR_NO_CHANNEL,
-	CORO_BUS_ERR_WOULD_BLOCK,
-	CORO_BUS_ERR_NOT_IMPLEMENTED,
+    CORO_BUS_ERR_NONE = 0,
+    CORO_BUS_ERR_NO_CHANNEL,
+    CORO_BUS_ERR_WOULD_BLOCK,
+    CORO_BUS_ERR_NOT_IMPLEMENTED,
 };
 
 struct coro_bus;
@@ -181,7 +181,7 @@ coro_bus_try_broadcast(struct coro_bus *bus, unsigned data);
  */
 int
 coro_bus_send_v(struct coro_bus *bus, int channel,
-	const unsigned *data, unsigned count);
+    const unsigned *data, unsigned count);
 
 /**
  * Same as coro_bus_send_v(), but fails instantly in case the
@@ -200,7 +200,7 @@ coro_bus_send_v(struct coro_bus *bus, int channel,
  */
 int
 coro_bus_try_send_v(struct coro_bus *bus, int channel,
-	const unsigned *data, unsigned count);
+    const unsigned *data, unsigned count);
 
 /**
  * Same as coro_bus_recv(), but can receive multiple messages at
@@ -222,7 +222,7 @@ coro_bus_try_send_v(struct coro_bus *bus, int channel,
  */
 int
 coro_bus_recv_v(struct coro_bus *bus, int channel,
-	unsigned *data, unsigned capacity);
+    unsigned *data, unsigned capacity);
 
 /**
  * Same as coro_bus_recv_v(), but fails instantly if the channel
@@ -242,6 +242,6 @@ coro_bus_recv_v(struct coro_bus *bus, int channel,
  */
 int
 coro_bus_try_recv_v(struct coro_bus *bus, int channel,
-	unsigned *data, unsigned capacity);
+    unsigned *data, unsigned capacity);
 
 #endif /* Bonus 2 */
