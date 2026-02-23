@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/osboxes/C_C++/sysprog_2/parser.h
+list
+-
+optional
+-
+stdbool.h
+-
+stdint.h
+-
+string
+-
+vector
+-
+
+/home/osboxes/C_C++/sysprog_2/solution.cpp
+parser.h
+/home/osboxes/C_C++/sysprog_2/parser.h
+cassert
+-
+cstring
+-
+cstdio
+-
+cstdlib
+-
+unistd.h
+-
+sys/wait.h
+-
+fcntl.h
+-
+vector
+-
+string
+-
+

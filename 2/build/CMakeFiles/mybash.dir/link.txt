@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/mybash.dir/solution.cpp.o CMakeFiles/mybash.dir/parser.cpp.o  -o mybash 
