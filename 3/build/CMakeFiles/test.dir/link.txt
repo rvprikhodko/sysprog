@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test.dir/userfs.cpp.o CMakeFiles/test.dir/test.cpp.o CMakeFiles/test.dir/home/osboxes/C_C++/utils/unit.cpp.o CMakeFiles/test.dir/home/osboxes/C_C++/utils/heap_help/heap_help.cpp.o  -o test  -ldl 
